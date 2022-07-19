@@ -29,13 +29,13 @@
                                     <input type="text" class="form-control mb-3" name="precio" placeholder="Precio">
                                   
                                     
-                                    <input type="submit" class="btn btn-primary">
+                                    <input type="submit" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
                                 </form>
                         </div>
 
-                        <div class="col-md-8">
+                        <div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
                             <table class="table" >
-                                <thead class="table-success table-striped" >
+                                <thead class="table-shopping-cart" >
                                     <tr>
                                         <th>ID</th>
                                         <th>Nombre</th>
