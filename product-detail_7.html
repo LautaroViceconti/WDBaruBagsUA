@@ -57,6 +57,10 @@
 							Mi cuenta
 						</a>
 
+						<a href="producto.php" class="flex-c-m trans-04 p-lr-25">
+							Administrar
+						</a>
+
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
 							ES
 						</a>
@@ -162,6 +166,10 @@
 
 						<a href="producto.php" class="flex-c-m p-lr-10 trans-04">
 							Mi cuenta
+						</a>
+
+						<a href="producto.php" class="flex-c-m trans-04 p-lr-25">
+							Administrar
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
@@ -1108,7 +1116,7 @@
 		$('.js-addcart-detail').each(function(){
 			var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
 			$(this).on('click', function(){
-				swal(nameProduct, "is added to cart !", "success");
+				swal(nameProduct, "agregado al carrito !", "success");
 			});
 		});
 	

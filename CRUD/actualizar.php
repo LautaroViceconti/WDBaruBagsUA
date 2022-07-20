@@ -4,7 +4,7 @@
 
 $id=$_GET['id'];
 
-$sql="SELECT * FROM producto WHERE id='$id'";
+$sql="SELECT * FROM alumno WHERE cod_estudiante='$id'";
 $query=mysqli_query($con,$sql);
 
 $row=mysqli_fetch_array($query);
@@ -25,13 +25,13 @@ $row=mysqli_fetch_array($query);
                 <div class="container mt-5">
                     <form action="update.php" method="POST">
                     
-                                <input type="hidden" name="id" value="<?php echo $row['id']  ?>">
+                                <input type="hidden" name="cod_estudiante" value="<?php echo $row['cod_estudiante']  ?>">
                                 
-                                <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>">
-                                <input type="text" class="form-control mb-3" name="cantidad" placeholder="Cantidad" value="<?php echo $row['cantidad']  ?>">
-                                <input type="text" class="form-control mb-3" name="precio" placeholder="Precio" value="<?php echo $row['precio']  ?>">
+                                <input type="text" class="form-control mb-3" name="dni" placeholder="Nombre y Apellido" value="<?php echo $row['dni']  ?>">
+                                <input type="text" class="form-control mb-3" name="nombres" placeholder="Mail" value="<?php echo $row['nombres']  ?>">
+                                <input type="text" class="form-control mb-3" name="apellidos" placeholder="Contraseña" value="<?php echo $row['apellidos']  ?>">
                                 
-                            <input type="submit"  onclick = "return confirm('¿Estás seguro que quieres actualizar los datos?');"class="btn btn-primary btn-block" value="Actualizar">
+                            <input type="submit" class="btn btn-primary btn-block" value="Actualizar">
                     </form>
                     
                 </div>
